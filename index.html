@@ -16,17 +16,18 @@
             embedded
             gesture-detector
         >
-            <a-marker
-                id="marker1"
+              <a-marker
+                id="animated-marker"
                 type="pattern"
                 preset="custom"
-                url="assets/marker.patt" <!-- Update this to your first marker pattern file -->
+                url="assets/marker.patt"
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
+                id="markerA"
             >
                 <a-image
-                    src="assets/asset.jpeg" <!-- Update this to your first image file -->
+                    src="assets/asset.jpeg"
                     scale="1 1 1"
                     class="clickable"
                     rotation="-90 0 0"
