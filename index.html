@@ -17,41 +17,41 @@
             gesture-detector
         >
             <a-marker
-                id="animated-marker"
+                id="marker1"
                 type="pattern"
                 preset="custom"
-                url="assets/marker.patt"
+                url="assets/marker.patt" <!-- Update this to your first marker pattern file -->
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
-                id="markerA"
             >
                 <a-image
-                    src="assets/dark-knight-joker-1597655811.png"
+                    src="assets/asset.jpeg" <!-- Update this to your first image file -->
                     scale="1 1 1"
                     class="clickable"
                     rotation="-90 0 0"
                     gesture-handler
                 ></a-image>
             </a-marker>
-             <a-marker
-                id="animated-marker-2"
+
+            <a-marker
+                id="marker2"
                 type="pattern"
                 preset="custom"
-                url="assets/pattern-marker.patt"
+                url="assets/pattern-marker.patt" <!-- Update this to your second marker pattern file -->
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
-                id="markerB"
             >
                 <a-image
-                    src="assets/asset.jpeg"
+                    src="assets/dark-knight-joker-1597655811.png" <!-- Update this to your second image file -->
                     scale="1 1 1"
                     class="clickable"
                     rotation="-90 0 0"
                     gesture-handler
                 ></a-image>
             </a-marker>
+
             <a-entity camera></a-entity>
         </a-scene>
     </body>
